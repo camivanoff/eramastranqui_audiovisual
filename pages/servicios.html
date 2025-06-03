@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <title>Servicios | Era Más Tranqui</title>
+</head>
+<body>
+    <header class="bg-dark text-white p-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <h1 class="h3 m-0">Era Más Tranqui</h1>
+            <nav>
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="./galeria.html">Galería</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white active" href="#">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="./nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="./contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container my-5">
+        <!-- ¿Qué hacemos? -->
+        <section class="mb-5 text-center">
+            <h2 class="mb-3">¿Qué hacemos?</h2>
+            <p class="lead">
+                Nos dedicamos a la creación de contenido audiovisual tanto para empresas que ya están posicionadas en el mercado, como para emprendedores que deseen llevar su marca al máximo nivel.
+            </p>
+        </section>
+
+        <!-- Carrusel de imágenes -->
+        <section class="mb-5">
+            <div id="carouselServicios" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../img/images-1.jpeg" class="d-block w-100 rounded" alt="Imagen 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/images-1.jpeg" class="d-block w-100 rounded" alt="Imagen 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/images-1.jpeg" class="d-block w-100 rounded" alt="Imagen 3">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselServicios" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselServicios" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
+            </div>
+        </section>
+
+        <!-- Cómo trabajamos -->
+        <section class="text-center mb-5">
+            <h3 class="mb-4">¿Cómo trabajamos?</h3>
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>1. Escuchamos</h5>
+                    <p>Nos interiorizamos con tu marca, tus objetivos y tu estilo.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>2. Creamos</h5>
+                    <p>Desarrollamos ideas, piezas y contenidos originales para tu proyecto.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>3. Ejecutamos</h5>
+                    <p>Lanzamos, analizamos y te entregamos soluciones listas para impactar.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonios -->
+        <section class="my-5">
+            <h4 class="text-center mb-4">Lo que dicen de nosotros</h4>
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+                <div class="col">
+                    <blockquote class="blockquote text-center text-white bg-dark p-4 rounded">
+                        <p class="mb-3">“Era Más Tranqui entendió perfectamente nuestra visión. La producción fue impecable y el contenido elevó nuestra marca a otro nivel.”</p>
+                        <footer class="blockquote-footer text-white-50">Nombre del cliente</footer>
+                    </blockquote>
+                </div>
+                <div class="col">
+                    <blockquote class="blockquote text-center text-white bg-dark p-4 rounded">
+                        <p class="mb-3">“Profesionales, creativos y muy humanos. Un placer trabajar con ellos.”</p>
+                        <footer class="blockquote-footer text-white-50">Nombre del cliente</footer>
+                    </blockquote>
+                </div>
+                <div class="col">
+                    <blockquote class="blockquote text-center text-white bg-dark p-4 rounded">
+                        <p class="mb-3">“Lograron que mi emprendimiento tenga presencia real en redes. ¡Gracias!”</p>
+                        <footer class="blockquote-footer text-white-50">Nombre del cliente</footer>
+                    </blockquote>
+                </div>
+                <div class="col">
+                    <blockquote class="blockquote text-center text-white bg-dark p-4 rounded">
+                        <p class="mb-3">“Superaron mis expectativas desde el primer encuentro. Súper recomendados.”</p>
+                        <footer class="blockquote-footer text-white-50">Nombre del cliente</footer>
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA final -->
+        <section class="text-center mt-4">
+            <a href="./contacto.html" class="btn btn-outline-warning btn-lg">Quiero trabajar con ustedes</a>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p class="m-0">Montevideo, Uruguay · Contacto: 099999999 · Lunes a Viernes 9:00 - 17:00 hs.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
