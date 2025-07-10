@@ -15,7 +15,7 @@ body {
 }
 
 /* ---------------------- */
-/* TipografÃ­a y textos */
+/* Tipografí­a y textos */
 /* ---------------------- */
 
 h1, h2, h3, h4, h5 {
@@ -74,7 +74,7 @@ main section:last-of-type {
 }
 
 /* ---------------------- */
-/* ImÃ¡genes y multimedia */
+/* Imágenes y multimedia */
 /* ---------------------- */
 
 img,
@@ -85,6 +85,14 @@ video {
   margin: 0 auto;
   border-radius: 12px;
   object-fit: cover;
+}
+
+
+#carouselServicios .carousel-item img {
+  height: 400px; /* Ajustá la altura según lo que te guste */
+  object-fit: cover;
+  width: 100%;
+  border-radius: 12px;
 }
 
 /* ---------------------- */
@@ -129,13 +137,11 @@ form .form-control:focus {
 /* Footer */
 /* ---------------------- */
 
-footer {
-  background-color: var(--card-bg);
-  text-align: center;
-  padding: 15px;
-  color: white;
-  font-size: 14px;
+footer a:hover i {
+  color: #ffc107;
+  transform: scale(1.1);
 }
+
 
 /* ---------------------- */
 /* Transiciones generales */
@@ -153,15 +159,28 @@ img,
 /* ---------------------- */
 
 .card {
-  background-color: #fff;
-  border: none;
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  background-color: black;
+  border: 1px solid #666;
+  transition: transform 0.4s ease, box-shadow 0.4s ease, border-color 0.4s ease;
   animation: fadeUp 1s ease;
 }
 
 .card:hover {
   transform: translateY(-5px);
   box-shadow: 0 0 15px rgba(255, 193, 7, 0.2);
+  border-color: #ffc107; /* cambia el borde a amarillo al hacer hover */
+}
+
+
+.card-text {
+  color: white; /* o el color que quieras */
+}
+
+.galeria-card img {
+  height: 250px; /* Ajustá según lo que te quede mejor */
+  object-fit: cover;
+  width: 100%;
+  border-radius: 12px;
 }
 
 /* ---------------------- */
