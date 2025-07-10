@@ -1,22 +1,26 @@
-
 body {
     background-color: #000;
     color: #fff;
     font-family: 'Segoe UI', Arial, sans-serif;
     scroll-behavior: smooth;
+    line-height: 1.6;
 }
 
-
-h1 {
+h1, h2, h3, h4, h5 {
     color: white;
-    text-align: center;
     font-weight: 700;
     letter-spacing: 1px;
     text-transform: uppercase;
+}
+
+h1 {
+    text-align: center;
     margin-bottom: 0;
 }
 
-
+/* ---------------------- */
+/* Header & Navigation */
+/* ---------------------- */
 header ul {
     list-style: none;
     display: flex;
@@ -27,12 +31,14 @@ header ul {
     background-color: #1a1a1a;
 }
 
-header ul li a {
+header ul li a,
+.nav-link {
     text-decoration: none;
     color: white;
     padding: 10px 15px;
     display: inline-block;
     transition: color 0.3s ease, background-color 0.3s ease;
+    border-radius: 8px;
 }
 
 header ul li a:hover,
@@ -40,10 +46,11 @@ header ul li a:hover,
 .nav-link.active {
     color: #ffc107;
     background-color: #333;
-    border-radius: 8px;
 }
 
-
+/* ---------------------- */
+/* Layout Sections */
+/* ---------------------- */
 main section {
     padding: 20px;
     margin-bottom: 3rem;
@@ -56,7 +63,9 @@ main section:last-of-type {
     flex-wrap: wrap;
 }
 
-
+/* ---------------------- */
+/* Media */
+/* ---------------------- */
 img,
 video {
     max-width: 100%;
@@ -67,7 +76,9 @@ video {
     object-fit: cover;
 }
 
-
+/* ---------------------- */
+/* Buttons */
+/* ---------------------- */
 button,
 .btn {
     background-color: #333;
@@ -85,7 +96,9 @@ button:hover,
     opacity: 0.9;
 }
 
-
+/* ---------------------- */
+/* Forms */
+/* ---------------------- */
 form .form-control {
     border-radius: 12px;
     background-color: #1a1a1a;
@@ -99,7 +112,9 @@ form .form-control:focus {
     background-color: #222;
 }
 
-
+/* ---------------------- */
+/* Footer */
+/* ---------------------- */
 footer {
     background-color: #111;
     text-align: center;
@@ -108,10 +123,46 @@ footer {
     font-size: 14px;
 }
 
-
+/* ---------------------- */
+/* Global Transitions */
+/* ---------------------- */
 a,
 button,
 img,
 .nav-link {
     transition: all 0.3s ease;
+}
+
+/* ---------------------- */
+/* Animaciones sutiles */
+/* ---------------------- */
+.card,
+.carousel-item img,
+blockquote {
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.card:hover,
+.carousel-item img:hover,
+blockquote:hover {
+    transform: scale(1.03);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+/* ---------------------- */
+/* Responsive ajustes */
+/* ---------------------- */
+@media (max-width: 768px) {
+    header ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar-collapse {
+        text-align: center;
+    }
+
+    .card {
+        margin-bottom: 1rem;
+    }
 }
