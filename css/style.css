@@ -1,22 +1,22 @@
-:root {
-  --primary: #ffc107;
-  --dark-bg: #000;
-  --light-text: #fff;
-  --card-bg: #111;
-  --hover-bg: #333;
-  --form-bg: #1a1a1a;
-}
-
 body {
-  background-color: var(--dark-bg);
-  color: var(--light-text);
-  font-family: 'Segoe UI', Arial, sans-serif;
+  background-color: #000;
+  color: #fff;
+  font-family: "Segoe UI", Arial, sans-serif;
   scroll-behavior: smooth;
 }
 
-/* ---------------------- */
-/* Tipografí­a y textos */
-/* ---------------------- */
+a, button, img, .nav-link {
+  transition: all 0.3s ease;
+}
+
+img, video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 12px;
+  object-fit: cover;
+}
 
 h1, h2, h3, h4, h5 {
   text-align: center;
@@ -25,10 +25,6 @@ h1, h2, h3, h4, h5 {
   text-transform: uppercase;
   margin-bottom: 1rem;
 }
-
-/* ---------------------- */
-/* Navbar */
-/* ---------------------- */
 
 header ul {
   list-style: none;
@@ -39,33 +35,27 @@ header ul {
   margin: 0;
   background-color: #1a1a1a;
 }
-
 header ul li a,
-.nav-link {
+header ul .nav-link {
   text-decoration: none;
-  color: var(--light-text);
+  color: #fff;
   padding: 10px 15px;
   display: inline-block;
   transition: all 0.3s ease;
 }
-
-.nav-link:hover,
-.nav-link.active {
-  color: var(--primary);
-  background-color: var(--hover-bg);
+header ul li a:hover, header ul li a.active,
+header ul .nav-link:hover,
+header ul .nav-link.active {
+  color: #ffc107;
+  background-color: #333;
   border-radius: 8px;
 }
-
-/* ---------------------- */
-/* Secciones */
-/* ---------------------- */
 
 main section {
   padding: 20px;
   margin-bottom: 3rem;
   animation: fadeUp 1s ease;
 }
-
 main section:last-of-type {
   display: flex;
   justify-content: center;
@@ -73,119 +63,67 @@ main section:last-of-type {
   flex-wrap: wrap;
 }
 
-/* ---------------------- */
-/* Imágenes y multimedia */
-/* ---------------------- */
-
-img,
-video {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-  border-radius: 12px;
-  object-fit: cover;
-}
-
-
-#carouselServicios .carousel-item img {
-  height: 400px; /* Ajustá la altura según lo que te guste */
-  object-fit: cover;
-  width: 100%;
-  border-radius: 12px;
-}
-
-/* ---------------------- */
-/* Botones */
-/* ---------------------- */
-
 button,
 .btn {
-  background-color: var(--hover-bg);
-  color: white;
+  background-color: #333;
+  color: #fff;
   border: none;
   padding: 10px 20px;
   border-radius: 25px;
   cursor: pointer;
   transition: all 0.3s ease;
 }
-
 button:hover,
 .btn:hover {
   transform: scale(1.05);
   opacity: 0.9;
 }
 
-/* ---------------------- */
-/* Formularios */
-/* ---------------------- */
-
 form .form-control {
   border-radius: 12px;
-  background-color: var(--form-bg);
-  color: white;
-  border: 1px solid #444;
+  background-color: #1a1a1a;
+  color: #fff;
+  border: 1px solid rgb(0.5, 0.5, 0.5);
 }
-
-form .form-control:focus {
-  border-color: var(--primary);
-  box-shadow: 0 0 0 0.2rem rgba(255,193,7,0.25);
-  background-color: #222;
+form .form-control form .form-control:focus {
+  border-color: #ffc107;
+  box-shadow: 0 0 0 0.2rem rgba(255, 193, 7, 0.25);
+  background-color: rgb(13.25, 13.25, 13.25);
 }
-
-/* ---------------------- */
-/* Footer */
-/* ---------------------- */
 
 footer a:hover i {
   color: #ffc107;
   transform: scale(1.1);
 }
 
-
-/* ---------------------- */
-/* Transiciones generales */
-/* ---------------------- */
-
-a,
-button,
-img,
-.nav-link {
-  transition: all 0.3s ease;
-}
-
-/* ---------------------- */
-/* Tarjetas y carrusel */
-/* ---------------------- */
-
 .card {
-  background-color: black;
+  background-color: #000;
   border: 1px solid #666;
   transition: transform 0.4s ease, box-shadow 0.4s ease, border-color 0.4s ease;
   animation: fadeUp 1s ease;
 }
-
 .card:hover {
   transform: translateY(-5px);
   box-shadow: 0 0 15px rgba(255, 193, 7, 0.2);
-  border-color: #ffc107; /* cambia el borde a amarillo al hacer hover */
+  border-color: #ffc107;
 }
-
-
-.card-text {
-  color: white; /* o el color que quieras */
+.card .card-text {
+  color: #fff;
 }
 
 .galeria-card img {
-  height: 250px; /* Ajustá según lo que te quede mejor */
+  height: 250px;
   object-fit: cover;
   width: 100%;
   border-radius: 12px;
 }
 
-/* ---------------------- */
-/* Animaciones */
-/* ---------------------- */
+#carouselServicios .carousel-item img {
+  height: 400px;
+  object-fit: cover;
+  width: 100%;
+  border-radius: 12px;
+}
 
 @keyframes fadeUp {
   from {
@@ -197,3 +135,5 @@ img,
     transform: translateY(0);
   }
 }
+
+/*# sourceMappingURL=style.css.map */

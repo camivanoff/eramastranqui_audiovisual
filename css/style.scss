@@ -1,0 +1,167 @@
+
+$primary: #ffc107;
+$dark-bg: #000;
+$light-text: #fff;
+$card-bg: #111;
+$hover-bg: #333;
+$form-bg: #1a1a1a;
+$border-gray: #666;
+
+
+body {
+  background-color: $dark-bg;
+  color: $light-text;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  scroll-behavior: smooth;
+}
+
+a, button, img, .nav-link {
+  transition: all 0.3s ease;
+}
+
+img, video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+
+h1, h2, h3, h4, h5 {
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+
+header {
+  ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+    background-color: $form-bg;
+
+    li a,
+    .nav-link {
+      text-decoration: none;
+      color: $light-text;
+      padding: 10px 15px;
+      display: inline-block;
+      transition: all 0.3s ease;
+
+      &:hover,
+      &.active {
+        color: $primary;
+        background-color: $hover-bg;
+        border-radius: 8px;
+      }
+    }
+  }
+}
+
+
+main {
+  section {
+    padding: 20px;
+    margin-bottom: 3rem;
+    animation: fadeUp 1s ease;
+
+    &:last-of-type {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+  }
+}
+
+
+button,
+.btn {
+  background-color: $hover-bg;
+  color: $light-text;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+  }
+}
+
+form {
+  .form-control {
+    border-radius: 12px;
+    background-color: $form-bg;
+    color: $light-text;
+    border: 1px solid darken($form-bg, 10%);
+
+    form .form-control:focus {
+      border-color: $primary;
+      box-shadow: 0 0 0 0.2rem rgba(255,193,7,0.25);
+      background-color: darken($form-bg, 5%);
+    }
+  }
+}
+
+
+footer {
+  a:hover i {
+    color: $primary;
+    transform: scale(1.1);
+  }
+}
+
+
+.card {
+  background-color: $dark-bg;
+  border: 1px solid $border-gray;
+  transition: transform 0.4s ease, box-shadow 0.4s ease, border-color 0.4s ease;
+  animation: fadeUp 1s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px rgba(255, 193, 7, 0.2);
+    border-color: $primary;
+  }
+
+  .card-text {
+    color: $light-text;
+  }
+}
+
+.galeria-card img {
+  height: 250px;
+  object-fit: cover;
+  width: 100%;
+  border-radius: 12px;
+}
+
+#carouselServicios .carousel-item img {
+  height: 400px;
+  object-fit: cover;
+  width: 100%;
+  border-radius: 12px;
+}
+
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
